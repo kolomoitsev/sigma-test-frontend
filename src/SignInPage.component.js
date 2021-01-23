@@ -6,9 +6,9 @@ import axios from 'axios'
 const SignInPage = () => {
 
     useEffect(() => {
-        sessionStorage.clear()
+        localStorage.clear()
     }, [])
-    
+
     const [emailForm, setEmailForm] = useState('');
     const [passwordForm, setPasswordForm] = useState('');
 
