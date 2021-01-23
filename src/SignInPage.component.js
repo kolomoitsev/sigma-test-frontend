@@ -26,7 +26,7 @@ const SignInPage = () => {
                 localStorage.setItem("_id", res.data._id)
                 history.push('/home')
             })
-            .catch(err => setErrorAuth(err.response.data.message))
+            .catch(() => setErrorAuth('Bad credentials'))
 
     }
 
@@ -56,7 +56,7 @@ const SignInPage = () => {
                         </div>
 
                         { errorAuth && <div className="w-100 text-center mt-4">
-                            <p>Bad credentials</p>
+                            <p>{errorAuth}</p>
                         </div> }
 
                     </form>
