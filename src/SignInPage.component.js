@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import config from './config'
 import axios from 'axios'
 
 const SignInPage = () => {
 
+    useEffect(() => {
+        sessionStorage.clear()
+    }, [])
+    
     const [emailForm, setEmailForm] = useState('');
     const [passwordForm, setPasswordForm] = useState('');
 
