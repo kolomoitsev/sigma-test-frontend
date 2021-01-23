@@ -4,6 +4,8 @@ import config from './config'
 
 import { useHistory } from 'react-router-dom'
 
+const history = useHistory();
+
 const refreshAuthLogic = failedRequest =>
     axios.post(`${config.refresh}`, {
         "refreshToken": `${localStorage.getItem("refreshToken")}`
@@ -15,7 +17,6 @@ const refreshAuthLogic = failedRequest =>
             return Promise.resolve();
         })
         .catch(() => {
-            const history = useHistory();
             localStorage.clear();
             history.push('/');
         });
