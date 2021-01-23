@@ -2,10 +2,6 @@ import axios from 'axios';
 import createAuthRefreshInterceptor from 'axios-auth-refresh';
 import config from './config'
 
-import { useHistory } from 'react-router-dom'
-
-const history = useHistory();
-
 const refreshAuthLogic = failedRequest =>
     axios.post(`${config.refresh}`, {
         "refreshToken": `${localStorage.getItem("refreshToken")}`
@@ -17,8 +13,7 @@ const refreshAuthLogic = failedRequest =>
             return Promise.resolve();
         })
         .catch(() => {
-            localStorage.clear();
-            history.push('/');
+            window.location.href = '/'
         });
 
 createAuthRefreshInterceptor(axios, refreshAuthLogic);
