@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66f80855-6684-4601-aef4-9d6a7229d9db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/refreshToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/refreshToken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homepage.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homepage.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignInPage.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignInPage.component.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611237685692</updated>
       <workItem from="1611237709705" duration="8657000" />
-      <workItem from="1611355322343" duration="8686000" />
+      <workItem from="1611355322343" duration="8974000" />
     </task>
     <servers />
   </component>

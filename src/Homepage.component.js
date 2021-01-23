@@ -6,7 +6,7 @@ const HomePage = () => {
 
     useEffect(() => {
 
-        axios.post(`${config.endpoint}/user/check`, { skipAuthRefresh: true }, {
+        axios.post(`${config.endpoint}/user/check`, {}, {
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem("accessToken")}`,
             },

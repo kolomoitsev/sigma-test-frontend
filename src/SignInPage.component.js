@@ -22,7 +22,7 @@ const SignInPage = () => {
         axios.post(`${config.endpoint}/user/login`, {
             "userEmail": emailForm,
             "userPassword": passwordForm
-        })
+        }, { skipAuthRefresh: true })
             .then(res => {
                 localStorage.setItem("accessToken", res.data.tokens.accessToken)
                 localStorage.setItem("refreshToken", res.data.tokens.refreshToken)
