@@ -6,10 +6,10 @@ const HomePage = () => {
 
     useEffect(() => {
 
-        axios.post(`${config.endpoint}/user/check`, {}, {
+        axios.post(`${config.endpoint}/user/check`, { skipAuthRefresh: true }, {
             headers: {
-                'Authorization': `Bearer ${localStorage.getItem("accessToken")}`
-            }
+                'Authorization': `Bearer ${localStorage.getItem("accessToken")}`,
+            },
         })
             .catch(err => console.log(err))
 
