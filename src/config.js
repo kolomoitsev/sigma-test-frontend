@@ -1,4 +1,4 @@
 module.exports = {
-    endpoint: "http://localhost:3001",
-    refresh: "http://localhost:3001/user/refresh",
+    endpoint: "https://sigma-test-backend.herokuapp.com/",
+    refresh: "https://sigma-test-backend.herokuapp.com/user/refresh",
 }
