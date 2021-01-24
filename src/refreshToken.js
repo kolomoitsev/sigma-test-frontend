@@ -1,9 +1,9 @@
 import axios from 'axios';
 import createAuthRefreshInterceptor from 'axios-auth-refresh';
-import config from './config'
+import config from './config';
 
 const refreshAuthLogic = failedRequest =>
-    axios.post(`${config.refresh}`, {
+    axios.post(`${config.endpoint}/user/refresh`, {
         "refreshToken": `${localStorage.getItem("refreshToken")}`
     })
         .then(tokenRefreshResponse => {
@@ -13,7 +13,7 @@ const refreshAuthLogic = failedRequest =>
             return Promise.resolve();
         })
         .catch(() => {
-            window.location.href = '/'
+            window.location.href = '/';
         });
 
 createAuthRefreshInterceptor(axios, refreshAuthLogic);

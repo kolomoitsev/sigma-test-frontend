@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import config from './config'
-import axios from 'axios'
+import React, { useEffect } from 'react';
+import config from './config';
+import axios from 'axios';
 
 const HomePage = () => {
 
@@ -26,4 +26,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export default HomePage;

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
-import config from './config'
-import axios from 'axios'
+import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
+import config from './config';
+import axios from 'axios';
 
 const SignInPage = () => {
 
@@ -17,6 +17,7 @@ const SignInPage = () => {
     const history = useHistory();
 
     const handleSubmit = async (event) => {
+
         event.preventDefault();
 
         axios.post(`${config.endpoint}/user/login`, {
@@ -70,4 +71,4 @@ const SignInPage = () => {
     )
 }
 
-export default SignInPage
+export default SignInPage;

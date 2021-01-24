@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import SignInPage from "./SignInPage.component";
 import HomePage from "./Homepage.component";
 
-import './refreshToken'
+import './refreshToken';
 
 const App = () => {
 
