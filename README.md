@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+
+## Test data for checking token update
+
+pavel.lovepavel@gmail.com
+pavel1999
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
