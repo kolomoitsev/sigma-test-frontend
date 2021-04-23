@@ -74,3 +74,123 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "25px",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://www.nextup.ai/images/cdn/task.png",
+                            "size": "Small"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "NFA-222 was updated",
+                            "wrap": true,
+                            "size": "Large",
+                            "spacing": "None"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "ExtraLarge",
+                                    "text": "Canned responses on Intercom",
+                                    "wrap": true
+                                }
+                            ],
+                            "width": "stretch"
+                        }
+                    ]
+                },
+                {
+                    "type": "FactSet",
+                    "facts": [
+                        {
+                            "title": "Status",
+                            "value": "To-do → **In Progress**"
+                        },
+                        {
+                            "title": "Type",
+                            "value": "Task → **Story**"
+                        },
+                        {
+                            "title": "Assignee",
+                            "value": "Logan Vantrease → **Nick Cron**"
+                        },
+                        {
+                            "title": "Priority",
+                            "value": "medium → **high**"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Process\nContact info\nTime for a dedicated conversation\nClearer understanding of how we can help them make their decision",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0",
+    "fallbackText": "This card requires Adaptive Cards v1.2 support to be rendered properly."
+}
